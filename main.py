@@ -1,10 +1,4 @@
-from fastapi import FastAPI, Form, Response
-from twilio.twiml.messaging_response import MessagingResponse
+import uvicorn
 
-app = FastAPI()
-
-@app.post("/hook")
-async def chat(From: str = Form(...), Body: str = Form(...)):
-    response = MessagingResponse()
-    msg = response.message(f"Hi {From}, you said: {Body}")
-    return Response(content=str(response), media_type="application/xml")
+if __name__ == "__main__":
+    uvicorn.run("app:app", reload=True, port=8000, host="0.0.0.0")
