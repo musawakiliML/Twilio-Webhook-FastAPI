@@ -14,8 +14,6 @@ Build a Secure Twilio Webhook with Python and FastAPI
 **Test Post**
 ![Alt text](image-2.png)
 
-**Test Post ( Succefull Request)**
-
 **Test Post (Failed validation)**
 ![Alt text](image-3.png)
 
