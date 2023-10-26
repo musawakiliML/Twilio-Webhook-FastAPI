@@ -2,6 +2,8 @@
 Build a Secure Twilio Webhook with Python and FastAPI
 
 ## Installation
+Install all packages inside "requirements.txt"
+
 
 
 ## Screenshots
