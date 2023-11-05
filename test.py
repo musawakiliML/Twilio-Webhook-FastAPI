@@ -29,7 +29,7 @@ def send_message(message, to_number):
             from_=f"whatsapp:{from_number}",  # Your Twilio WhatsApp number
             body=message,  # The message you want to send
         )
-        print(bot_message)
+        # print(bot_message)
         print({"message": "WhatsApp message sent successfully"})
     except Exception as e:
         raise Exception("error:" + str(e))
